@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.vino4{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 300px;
+}
+.vijay{
+    display: flex;
+    text-align: center;
+    left: 20px;
+}
