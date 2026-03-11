@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfoloi</title>
+    <link rel="stylesheet" href="./c.css">
+     <link src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js" integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+     
+</head>
+<body>
+    <header class="header  col-lg-4 col-lg-6 col-lg-12 ">
+        <a href="#" class="logo  col-lg-4 col-lg-6 col-lg-12 ">vino.</a>
+
+
+         <nav class="navbar  col-lg-4 col-lg-6 col-lg-12 ">
+            
+            <a href="#home">Home</a>
+             <a href="#tic tac">Tic Tac </a>
+              <a href="#services">services</a>
+               <a href="#contact">contact</a>
+                
+         </nav>
+
+    </header>
+    <section class="home  col-lg-4 col-lg-6 col-lg-12 ">
+        
+     <div class="home-content  col-lg-4 col-lg-6 col-lg-12 ">
+          <!-- <div class="class">
+            <img src="./b22d2086-f1ac-43e5-9604-0dcad2bde068.jpg" alt="">
+          </div>    -->
+    <div class="vino1">
+        
+            <div>
+                <h1>I am  java fullstack</h1>
+        <h3>java developer</h3>
+        <p> I recently completed the Java Full Stack course at Izeon IT Training, and it was a fantastic experience. The trainers explained complex concepts in a simple and effective manner. The practical sessions and projects helped me gain confidence in building full-stack applications. I am grateful to the team for their support and guidance throughout the course.</p>
+          <div class="btn-box  col-lg-4 col-lg-6 col-lg-12 ">
+            <a href="#"> vino me</a>
+            <a href="#"> let's talk</a>
+            </div>
+            </div>
+            <div><img class="img1" src="./711acac0-b587-4b36-bb43-29ff75754b3c.png" alt="">     </div>
+    </div>
+          </section>
+
+
+             <div class="one  col-lg-4 col-lg-6 col-lg-12 ">
+                <section id="home">
+        
+        <img src="./360_F_292835773_oImixQGFKLpOPnjfsbesHyqdjOk5hsxL.jpg" alt="">
+        <p >Our Java Full Stack Training will make students learn some of the most in-demand concepts in Java Full Stack such as – HTML, CSS, Bootstrap, Java Script, Java, MySQL, JSP & Servlet, Spring Boot Framework etc. This curriculum will surely make students experts in the concept of Java Full Stack in a shorter span of time. Our Java Full Stack Course with 100% placement support is curated with the help of leading experts from the IT industry, which makes our Java Full Stack Course up-to-date in accordance with the latest trends.
+
+         Our SLA Institute is guaranteed to place you in a high-paying Full Stack Developer and other Java Full Stack related jobs with help of our experienced placement officers. SLA Institute’s Course Syllabus for Java Full Stack covers all topics that are guaranteed to give you a complete understanding of the Java Full Stack Course.</p>
+         </section>
+        </div>      
+      
+
+         
+
+     <section class="services  col-lg-4 col-lg-6  col-lg-12" id="services">
+        
+    <div class="container  col-lg-4 col-lg-6 col-lg-12 ">
+        <h1>My Services</h1>
+        <p class="subtitle  col-lg-4 col-lg-6 col-lg-12 ">What I can do for you as a Java Full Stack Developer</p>
+
+        <div class="service-box  col-lg-4 col-lg-6 col-lg-12 ">
+
+            <div class="card  col-lg-4 col-lg-6 col-lg-12 ">
+                <h2>Frontend Development</h2>
+                <p>
+                    Building responsive and user-friendly websites using 
+                    HTML, CSS, and JavaScript.
+                </p>
+            </div>
+
+            <div class="card  col-lg-4 col-lg-6 col-lg-12 ">
+                <h2>Backend Development</h2>
+                <p>
+                    Developing secure and scalable backend applications 
+                    using Java and Spring Boot.
+                </p>
+            </div>
+
+            <div class="card  col-lg-4 col-lg-6 col-lg-12 ">
+                <h2>Database Management</h2>
+                <p>
+                    Designing and managing databases using MySQL 
+                    with proper relationships and queries.
+                </p>
+            </div>
+
+            <div class="card  col-lg-4 col-lg-6 col-lg-12 ">
+                <h2>Full Stack Web Applications</h2>
+                <p>
+                    Creating complete web applications from frontend 
+                    to backend with REST APIs integration.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="tic tac">
+         <h1>Tic Tac Toe</h1>
+<h2 id="status">Player X Turn</h2>
+
+<div class="board  col-lg-4 col-lg-6 col-lg-12 ">
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+    <div class="cell" onclick="play(this)"></div>
+</div>
+ </section>
+
+<script>
+let currentPlayer = "X";
+
+function play(cell) {
+    if (cell.innerHTML === "") {
+        cell.innerHTML = currentPlayer;
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
+        document.getElementById("status").innerText = 
+            "Player " + currentPlayer + " Turn";
+    }
+}
+</script><br>
+
+
+
+     
+      <div class="box col-lg-4 col-lg-6 col-lg-12 " style="text-align: center;">
+       <img src="./Why Full Stack Development Is Better Than Only Frontend t.jpg" alt="">
+   
+     <h1> Photo Gallery vino</h1><br>
+     <h2> pets or not allowed</h2><br>
+     
+     </div>
+
+
+
+
+     <section class="contact  col-lg-4 col-lg-6 col-lg-12 " id="contact">
+    <div class="container  col-lg-4 col-lg-6 col-lg-12 ">
+        <h1>Contact Me</h1>
+        <p class="subtitle">Feel free to get in touch with me</p>
+
+        <form class="contact-form  col-lg-4 col-lg-6 col-lg-12 ">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info  col-lg-4 col-lg-6 col-lg-12 ">
+            <p><strong> Location:</strong> Chennai, Tamil Nadu</p>
+            <p><strong>📞 Phone:</strong> 6381731813</p>
+            <p><strong> Email:</strong> vinoth638173@gmail.com</p>
+        </div>
+    </div>
+</section>
+    
+
+
+</body>
+</html>
